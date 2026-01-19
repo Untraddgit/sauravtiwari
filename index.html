@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Tiwari - Gaming Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.8); }
+        }
+        .float { animation: float 3s ease-in-out infinite; }
+        .glow { animation: glow 2s ease-in-out infinite; }
+        .game-card { transition: all 0.3s ease; }
+        .game-card:hover { transform: translateY(-10px) scale(1.05); }
+        body { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    </style>
+</head>
+<body class="min-h-screen text-white">
+    <!-- Header Section -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="text-center mb-12">
+            <div class="inline-block mb-6 float">
+                <div class="w-32 h-32 bg-gradient-to-br from-purple-400 to-pink-600 rounded-full flex items-center justify-center text-6xl glow">
+                    🎮
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-pink-600">
+                Saurav Tiwari
+            </h1>
+            <p class="text-xl md:text-2xl text-purple-200 mb-2">Class 9th A | Pro Gamer</p>
+            <p class="text-lg text-purple-300">📍 New Delhi, India</p>
+            
+            <!-- Soul Animal Badge -->
+            <div class="mt-6 inline-block bg-white/10 backdrop-blur-md rounded-full px-6 py-3 border-2 border-purple-400">
+                <span class="text-2xl">🐕</span>
+                <span class="ml-2 text-purple-200">Soul Animal: Dog</span>
+            </div>
+        </div>
+
+        <!-- Contact Info Card -->
+        <div class="max-w-2xl mx-auto mb-12 bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-purple-400">
+            <h2 class="text-2xl font-bold mb-4 text-center">📬 Contact Me</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="flex items-center space-x-3 bg-purple-600/30 rounded-lg p-3">
+                    <i class="fas fa-phone text-2xl text-green-400"></i>
+                    <div>
+                        <p class="text-sm text-purple-200">Phone</p>
+                        <p class="font-semibold">+91 98765 43210</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-3 bg-purple-600/30 rounded-lg p-3">
+                    <i class="fas fa-envelope text-2xl text-yellow-400"></i>
+                    <div>
+                        <p class="text-sm text-purple-200">Email</p>
+                        <p class="font-semibold text-sm">saurav.gamer@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Games I Play Section -->
+        <div class="max-w-6xl mx-auto mb-12">
+            <h2 class="text-4xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
+                🎯 Games I Play
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Minecraft -->
+                <div class="game-card bg-gradient-to-br from-green-600 to-green-800 rounded-2xl p-6 text-center shadow-2xl cursor-pointer">
+                    <div class="text-6xl mb-3">⛏️</div>
+                    <h3 class="font-bold text-xl">Minecraft</h3>
+                    <p class="text-sm text-green-200 mt-2">Build & Survive</p>
+                </div>
+
+                <!-- BGMI -->
+                <div class="game-card bg-gradient-to-br from-orange-600 to-red-800 rounded-2xl p-6 text-center shadow-2xl cursor-pointer">
+                    <div class="text-6xl mb-3">🔫</div>
+                    <h3 class="font-bold text-xl">BGMI</h3>
+                    <p class="text-sm text-orange-200 mt-2">Battle Royale</p>
+                </div>
+
+                <!-- Free Fire Max -->
+                <div class="game-card bg-gradient-to-br from-yellow-600 to-orange-800 rounded-2xl p-6 text-center shadow-2xl cursor-pointer">
+                    <div class="text-6xl mb-3">🔥</div>
+                    <h3 class="font-bold text-xl">Free Fire Max</h3>
+                    <p class="text-sm text-yellow-200 mt-2">Survival Shooter</p>
+                </div>
+
+                <!-- Ludo -->
+                <div class="game-card bg-gradient-to-br from-blue-600 to-purple-800 rounded-2xl p-6 text-center shadow-2xl cursor-pointer">
+                    <div class="text-6xl mb-3">🎲</div>
+                    <h3 class="font-bold text-xl">Ludo</h3>
+                    <p class="text-sm text-blue-200 mt-2">Classic Board Game</p>
+                </div>
+
+                <!-- Scarefall -->
+                <div class="game-card bg-gradient-to-br from-red-600 to-pink-800 rounded-2xl p-6 text-center shadow-2xl cursor-pointer">
+                    <div class="text-6xl mb-3">👻</div>
+                    <h3 class="font-bold text-xl">Scarefall</h3>
+                    <p class="text-sm text-red-200 mt-2">Horror Adventure</p>
+                </div>
+
+                <!-- LK -->
+                <div class="game-card bg-gradient-to-br from-indigo-600 to-purple-800 rounded-2xl p-6 text-center shadow-2xl cursor-pointer">
+                    <div class="text-6xl mb-3">⚔️</div>
+                    <h3 class="font-bold text-xl">LK</h3>
+                    <p class="text-sm text-indigo-200 mt-2">Action RPG</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gaming Squad Section -->
+        <div class="max-w-4xl mx-auto mb-12">
+            <h2 class="text-4xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-yellow-500">
+                👥 My Gaming Squad
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center border-2 border-pink-400 hover:scale-105 transition">
+                    <div class="text-6xl mb-3">🎮</div>
+                    <h3 class="font-bold text-xl">Player 1</h3>
+                    <p class="text-purple-200 mt-2">Squad Leader</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center border-2 border-blue-400 hover:scale-105 transition">
+                    <div class="text-6xl mb-3">🎯</div>
+                    <h3 class="font-bold text-xl">Player 2</h3>
+                    <p class="text-purple-200 mt-2">Sniper Pro</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center border-2 border-green-400 hover:scale-105 transition">
+                    <div class="text-6xl mb-3">🏆</div>
+                    <h3 class="font-bold text-xl">Player 3</h3>
+                    <p class="text-purple-200 mt-2">Champion</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="max-w-4xl mx-auto mb-12">
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-purple-400">
+                <h2 class="text-3xl font-bold text-center mb-6">⚡ Gaming Stats</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div>
+                        <div class="text-4xl font-bold text-yellow-400">6+</div>
+                        <p class="text-purple-200 mt-2">Games</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-green-400">3</div>
+                        <p class="text-purple-200 mt-2">Squad Members</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-blue-400">100+</div>
+                        <p class="text-purple-200 mt-2">Hours Played</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-pink-400">∞</div>
+                        <p class="text-purple-200 mt-2">Fun Level</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-purple-200 pb-8">
+            <p class="text-lg">🎮 Ready to Play? Let's Connect! 🎮</p>
+            <p class="text-sm mt-2">© 2026 Saurav Tiwari - Gaming Portfolio</p>
+        </div>
+    </div>
+</body>
+</html>
